@@ -5,7 +5,7 @@ on: push
 env: 
   FILE_NAME: artifact1
 jobs:
-  name: 
+   name: 
     runs-on: ubuntu-latest
     steps:
       - name: checkout code
