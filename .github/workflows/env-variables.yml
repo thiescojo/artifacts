@@ -2,17 +2,18 @@ name: environmentVariables
 
 on: push
 
-env:
+env: 
   FILE_NAME: artifact1
-  
-jobs:
+jobs: 
   name: artifact-job
   runs-on: ubuntu-latest
-    steps:
-      - name: checkout code
-        uses: actions/checkout@v2
-      - name: upload artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name:  ${{ env.FILE_NAME }}
-          path: .
+  steps: 
+    - 
+      name: "checkout code"
+      uses: actions/checkout@v2
+    - 
+      name: "upload artifact"
+      uses: actions/upload-artifact@v2
+      with: 
+        name: "${{ env.FILE_NAME }}"
+        path: "."
